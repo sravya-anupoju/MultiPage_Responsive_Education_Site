@@ -1,0 +1,276 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color_primary: #fcc8e2;
+    --color_bg: #660033;
+    --color_bg1: #b30047;
+    --color_bg2: #ad0247;
+    --color_white: #fff;
+    --color_black: #000;
+    --color_success: #bfec56;
+    --color_danger: #f13574;
+    --color_warning: #fae674;
+
+    --container_width_lg: 80%;
+    --container_width_md: 90%;
+    --container_width_sm: 95%;
+
+    --transition: all 400ms ease;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: var(--color_bg);
+    color: var(--color_white);
+}
+
+.container {
+    width: var(--container_width_lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color_white);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color_white);
+    color: var(--color_black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn_hover {
+    background: transparent;
+    color: var(--color_white);
+    border-color: var(--color_white);
+}
+
+.btn_primary {
+    background: var(--color_danger);
+    color: var(--color_white);
+}
+
+nav {
+    /* background: var(--color_bg1); */
+    width: 100vw;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.window-scroll{
+    background: var(--color_bg2);
+    box-shadow: 0rem 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.nav__menu a{
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover{
+    color: var(--color_bg2);
+}
+
+
+/* --------------Header---------------- */
+
+header{
+    position: relative;
+    top:4rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap:5rem;
+    height: 100%;
+}
+
+.header__left p{
+    margin: 1rem 0rem 2.5rem;
+}
+
+/* ------------------Categories -----------------*/
+categories h1{
+    line-height: 1rem;
+    margin-bottom: 4rem;
+}
+
+.categories{
+    background: var(--color_bg1);
+    height: 28rem;
+}
+
+.categories__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    /* align-items: center; */
+    margin-left: 5rem;
+    
+}
+
+.categories_left p{
+    margin: 1rem 0rem 2.5rem;
+}
+
+.categories_right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.3rem;
+
+}
+
+.category_article{
+    background: var(--color_bg2);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    transition: var(--transition);
+}
+
+.category_article:hover{
+    box-shadow:0 2rem 2rem var(--color_bg);
+
+}
+
+.category_icon{
+    background: var(--color_primary);
+    padding: 0.6rem 0.8rem;
+    color: var(--color_bg);
+    border-radius: 7px;
+}
+
+.category_article h5{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+
+}
+
+.category_article p{
+    font-size: 1rem;
+}
+
+/* ---------------------Courses beginning---------------- */
+
+.courses{
+    margin-top: 4rem;
+}
+
+.courses__cointainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.course{
+    background: var(--color_bg1);
+    padding: 0 0;
+    border: 3px solid transparent;
+    text-align: center;
+    /* border-radius: 1rem; */
+
+}
+
+.courses h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.course_info h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.course_info p{
+    font-size: 1.1rem;
+}
+.course_info{
+    margin-bottom: 1.5rem;
+
+}
+
+.courses a{
+    margin: 1rem;
+
+}
+
